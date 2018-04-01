@@ -7,6 +7,7 @@ class ToggleButton extends React.Component {
 
     this.state = {
       isEnabled: false
+
     }
   }
 
@@ -15,6 +16,8 @@ class ToggleButton extends React.Component {
       <button className="toggle-button">
         I am toggled {this.state.isEnabled ? 'on' : 'off'}
       </button>
+
+
     )
   }
 }

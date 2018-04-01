@@ -4,18 +4,26 @@
 import React from 'react';
 
 class Address extends React.Component {
-  constructor(props) {
-    super(props);
+  // constructor(props) {
+  //   super(props);
 
-    this.state = {
-      fullAddress: `${props.street}, ${props.city}`
-    }
-  }
+  //   this.state = {
+  //     fullAddress: `${props.street}, ${props.city}`
+  //   }
+  // }
+
+  // render() {
+  //   return (
+  //     <div className="address">
+  //       {this.state.fullAddress}
+  //     </div>
+  //   );
+  // }
 
   render() {
     return (
       <div className="address">
-        {this.state.fullAddress}
+        {this.props.street}, {this.props.city}
       </div>
     );
   }
